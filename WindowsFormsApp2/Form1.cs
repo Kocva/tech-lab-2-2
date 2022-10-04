@@ -19,11 +19,19 @@ namespace WindowsFormsApp2
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            string code1 = this.txt1Code.Text;
-            string code2 = this.txt2Code.Text;
-            string codeWord = this.txtCodeWord.Text;
-
+            string code1, code2, codeWord;
+            try
+            {
+                code1 = this.txt1Code.Text;
+                code2 = this.txt2Code.Text;
+                codeWord = this.txtCodeWord.Text;
+            }
+            catch
+            {
+                return;
+            }
             MessageBox.Show(Logic.Replace(codeWord, code1, code2));
+            
 
         }
     }
