@@ -15,6 +15,10 @@ namespace WindowsFormsApp2
         public Form1()
         {
             InitializeComponent();
+
+            txt1Code.Text = Properties.Settings.Default.code1.ToString();
+            txt2Code.Text = Properties.Settings.Default.code2.ToString();
+            txtCodeWord.Text = Properties.Settings.Default.codeWord.ToString();
         }
 
         private void Button1_Click(object sender, EventArgs e)
@@ -30,6 +34,11 @@ namespace WindowsFormsApp2
             {
                 return;
             }
+            Properties.Settings.Default.code1 = code1;
+            Properties.Settings.Default.code2 = code2;
+            Properties.Settings.Default.codeWord = codeWord;
+            Properties.Settings.Default.Save();
+
             MessageBox.Show(Logic.Replace(codeWord, code1, code2));
             
 
