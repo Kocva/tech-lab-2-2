@@ -19,6 +19,11 @@ namespace WindowsFormsApp2
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            string code1 = this.txt1Code.Text;
+            string code2 = this.txt2Code.Text;
+            string codeWord = this.txtCodeWord.Text;
+
+            MessageBox.Show(Logic.Replace(codeWord, code1, code2));
 
         }
     }

@@ -28,35 +28,35 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.txt1Code = new System.Windows.Forms.TextBox();
+            this.txt2Code = new System.Windows.Forms.TextBox();
+            this.txtCodeWord = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // textBox1
+            // txt1Code
             // 
-            this.textBox1.Location = new System.Drawing.Point(120, 12);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
-            this.textBox1.TabIndex = 0;
+            this.txt1Code.Location = new System.Drawing.Point(120, 12);
+            this.txt1Code.Name = "txt1Code";
+            this.txt1Code.Size = new System.Drawing.Size(100, 20);
+            this.txt1Code.TabIndex = 0;
             // 
-            // textBox2
+            // txt2Code
             // 
-            this.textBox2.Location = new System.Drawing.Point(120, 38);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(100, 20);
-            this.textBox2.TabIndex = 1;
+            this.txt2Code.Location = new System.Drawing.Point(120, 38);
+            this.txt2Code.Name = "txt2Code";
+            this.txt2Code.Size = new System.Drawing.Size(100, 20);
+            this.txt2Code.TabIndex = 1;
             // 
-            // textBox3
+            // txtCodeWord
             // 
-            this.textBox3.Location = new System.Drawing.Point(120, 64);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(100, 20);
-            this.textBox3.TabIndex = 2;
+            this.txtCodeWord.Location = new System.Drawing.Point(120, 64);
+            this.txtCodeWord.Name = "txtCodeWord";
+            this.txtCodeWord.Size = new System.Drawing.Size(100, 20);
+            this.txtCodeWord.TabIndex = 2;
             // 
             // label1
             // 
@@ -104,9 +104,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.textBox1);
+            this.Controls.Add(this.txtCodeWord);
+            this.Controls.Add(this.txt2Code);
+            this.Controls.Add(this.txt1Code);
             this.Name = "Form1";
             this.Text = "Form1";
             this.ResumeLayout(false);
@@ -116,9 +116,9 @@
 
         #endregion
 
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox txt1Code;
+        private System.Windows.Forms.TextBox txt2Code;
+        private System.Windows.Forms.TextBox txtCodeWord;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label3;
